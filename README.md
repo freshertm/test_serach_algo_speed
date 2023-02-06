@@ -21,7 +21,17 @@ There are 2 parameters required to run:
  2. size of a array. array will randomly generate each time.
 
 All numbers in repot in milliseconds. To get comparable value i added repeats constans. for my PC it value is 10M.
-
+report columns: 
+ - v - value to search.
+ - eX - elapsed milliseconds for algoX.
+ - aXs - reads from array for algorithmX.
+ - "OK" - result is equal for both algorithms. (otherwise it will be "FAIL").
+report total values:
+ - sumX - total execution time for algoX
+ - avgX - average execution time (sumX / number of runs)
+ - minX - minimum time of execution
+ - maxX - maximum time of execution
+ 
 # Tests:
 ## Worst case for dichotomic search:
 > algo_speed_test.exe 20 5
